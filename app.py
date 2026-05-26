@@ -21,10 +21,10 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from src.emotion_classifier import Emotion, EMOTION_COLORS, EMOTION_EMOJIS
-from src.session_manager import SessionManager, SessionStats
-from src.audio_engine import BargeInEvent
-from src.emotion_classifier import EmotionResult
+from emotion_classifier import Emotion, EMOTION_COLORS, EMOTION_EMOJIS
+from session_manager import SessionManager, SessionStats
+from audio_engine import BargeInEvent
+from emotion_classifier import EmotionResult
 
 
 # ─── Page Config ─────────────────────────────────────────────────────────────
