@@ -19,12 +19,15 @@ from typing import List
 import sys
 from pathlib import Path
 
-sys.path.insert(0, os.path.dirname(__file__))
+ROOT_DIR = Path(__file__).parent
+sys.path.append(str(ROOT_DIR))
 
-from emotion_classifier import Emotion, EMOTION_COLORS, EMOTION_EMOJIS
-from session_manager import SessionManager, SessionStats
-from audio_engine import BargeInEvent
-from emotion_classifier import EmotionResult
+#sys.path.insert(0, os.path.dirname(__file__))
+
+from src.emotion_classifier import Emotion, EMOTION_COLORS, EMOTION_EMOJIS
+from src.session_manager import SessionManager, SessionStats
+from src.audio_engine import BargeInEvent
+from src.emotion_classifier import EmotionResult
 
 
 # ─── Page Config ─────────────────────────────────────────────────────────────
