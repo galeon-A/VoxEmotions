@@ -19,10 +19,7 @@ from typing import List
 import sys
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).parent
-sys.path.append(str(ROOT_DIR))
-
-#sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(__file__))
 
 from src.emotion_classifier import Emotion, EMOTION_COLORS, EMOTION_EMOJIS
 from src.session_manager import SessionManager, SessionStats
